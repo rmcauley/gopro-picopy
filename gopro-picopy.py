@@ -6,7 +6,7 @@ import hashlib
 from os import path
 
 IGNORE_MOUNTPOINTS = ("/", "/boot")
-COPY_FILENAMES = (".mp4", ".jpg", ".jpeg")
+COPY_FILENAMES = ("mp4", "jpg", "jpeg")
 
 # taken from:  https://stackoverflow.com/a/44873382
 def sha256sum(filename):
