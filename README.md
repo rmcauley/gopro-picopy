@@ -13,3 +13,10 @@ Copies GoPro movies and images to the largest attached drive.  Meant to be used 
 - Run automatically on device mount (you will need a way to start the script on the Pi yourself)
 - Delete files (format the card on your GoPro once satisfied with the copy results)
 - Show file copy progress
+
+## What do I need on my Pi?
+
+```
+sudo apt-get install exfat-fuse exfat-utils
+pip install -f requirements.txt
+```
