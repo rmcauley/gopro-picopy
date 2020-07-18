@@ -21,6 +21,7 @@ Copies GoPro movies and images to the largest attached drive.  Meant to be used 
 - Add `dtoverlay=disable-wifi` and `dtoverlay=disable-bt` to the boot `config.txt` if you do not want the radios enabled
 - SSH into the Pi with user `pi` password `raspberry`
 - Use `passwd` to change password
+- `sudo rm /etc/xdg/autostart/piwiz.desktop` to disable the setup wizard
 
 Setup the case LCD if you have one:
 ```
@@ -37,5 +38,6 @@ sudo apt-get dist-upgrade
 sudo apt-get autoremove
 sudo apt-get install exfat-fuse exfat-utils vim
 git clone https://github.com/rmcauley/gopro-picopy.git
-pip install -f requirements.txt
+cd gopro-picopy
+python3 -m pip install -r requirements.txt
 ```
