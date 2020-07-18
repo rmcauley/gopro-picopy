@@ -40,4 +40,7 @@ sudo apt-get install exfat-fuse exfat-utils vim
 git clone https://github.com/rmcauley/gopro-picopy.git
 cd gopro-picopy
 python3 -m pip install -r requirements.txt
+chmod u+x copy.sh
+cd ~/Desktop
+ln -s ~/gopro-picopy/copy.sh
 ```
