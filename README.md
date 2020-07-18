@@ -14,9 +14,28 @@ Copies GoPro movies and images to the largest attached drive.  Meant to be used 
 - Delete files (format the card on your GoPro once satisfied with the copy results)
 - Show file copy progress
 
-## What do I need on my Pi?
+## Pi Setup As Tested
+
+- Setup: https://www.raspberrypi.org/downloads/
+- Add `ssh` file to the boot partition of the SD card to enable remote
+- Add `dtoverlay=disable-wifi` and `dtoverlay=disable-bt` to the boot `config.txt` if you do not want the radios enabled
+- SSH into the Pi with user `pi` password `raspberry`
+- Use `passwd` to change password
+
+Setup the case LCD if you have one:
+```
+git clone https://github.com/goodtft/LCD-show.git
+cd  LCD-show/
+sudo  ./MHS35-show
+```
 
 ```
-sudo apt-get install exfat-fuse exfat-utils
+sudo apt-get update
+sudo apt-get remove geany thonny vlc gpicview chromium-browser realvnc-vnc-server
+sudo apt-get autoremove
+sudo apt-get dist-upgrade
+sudo apt-get autoremove
+sudo apt-get install exfat-fuse exfat-utils vim
+git clone https://github.com/rmcauley/gopro-picopy.git
 pip install -f requirements.txt
 ```
