@@ -1,3 +1,7 @@
+# Archived
+
+This project did not satisfy my requirements in the end, and I have decided to archive it.
+
 # gopro-picopy
 
 Copies GoPro movies and images to the largest attached drive.  Meant to be used on Raspberry Pis as a lightweight portable method of backing up MicroSD cards used on GoPros to larger disks for those longer trips when you don't want to haul a laptop to do the job, or if you're wary of paying more for all-in-one devices.
